@@ -26,15 +26,25 @@ header {
 
 /* responsive css */
 @media screen and (max-width:992px) {
-    header{
+    header {
         padding: 10px;
     }
-    header h2{
+
+    header h2 {
         font-size: 20px;
     }
-   header .hide{
-    display: none;
-   }
+
+}
+
+@media screen and (max-width:768px) {
+    header h2 span {
+        text-wrap: nowrap;
+        font-size: 10px;
+    }
+
+    header h2 {
+        font-size: 14px;
+    }
 }
 
 /*================================= header section end ====================================================================*/
@@ -86,12 +96,19 @@ header {
 .banner aside input::placeholder {
     text-align: center;
 }
+
 /* responsive css */
 @media screen and (max-width:992px) {
-    .banner{
+    .banner {
         padding: 10px;
         flex-direction: column;
         height: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner h1 {
+        font-size: 30px;
     }
 }
 
@@ -125,19 +142,43 @@ header {
     text-align: justify;
     margin-top: 5px;
 }
+
 /* responsive css */
 @media screen and (max-width:992px) {
-    .feature{
+    .feature {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-      padding: 20px;
+        padding: 50px 0px;
     }
+
     .feature div {
-        width: auto;
-        height: auto;
+        width: 35%;
+        height: 450px;
+    }
+  
+    .feature div img,
+    .feature div p {
+        margin-left: -50%;
+       
+       font-size: 16px;
+    }
+
+    .feature div h2 {
+        margin: 0px;
     }
 }
+@media screen and (max-width:768px) {
+    .feature {
+       padding: 0;
+    }
+
+    header h2 {
+        font-size: 14px;
+    }
+}
+
+
 /* ================================feature section end ================================================================= */
 /* ================================about section start ================================================================= */
 .about {
@@ -168,13 +209,15 @@ header {
     border-radius: 5px;
     margin-top: 10px;
 }
+
 /* responsive csss */
 @media screen and (max-width:992px) {
-    .about{
+    .about {
         padding: 20px;
-    
+
     }
 }
+
 /* ================================ about section end ================================================================= */
 /* ================================ service section start ================================================================= */
 .service {
@@ -208,20 +251,26 @@ header {
 .service .image img {
     width: 660px;
 }
+
 /* responsive css */
 @media screen and (max-width:992px) {
-    .service{
+    .service {
         padding: 10px;
     }
-    .service .upper ,.service .lower{
+
+    .service .upper,
+    .service .lower {
         flex-direction: column;
     }
-    .service .image{
+
+    .service .image {
         width: 0%;
         align-items: center;
         justify-content: center;
     }
-    .service .image,.service .content{
+
+    .service .image,
+    .service .content {
         width: auto;
         padding-left: 0px !important;
         padding-right: 0px;
@@ -229,6 +278,7 @@ header {
         justify-content: center;
     }
 }
+
 /* ================================ service section end ================================================================= */
 /* ================================ footer section start ================================================================= */
 footer {
